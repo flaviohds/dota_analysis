@@ -1,3 +1,14 @@
 # dota_analysis
 
-Project to analyze character composition and assist in character picks for the game DOTA 2.
+Project to analyze character (heroes) compositions and assist in hero picks for the game DOTA 2.
+
+For more information on DOTA 2, check out Purge's guide https://purgegamers.true.io/g/dota-2-guide/ "Dota Basics".
+
+The idea is to have a database with the characteristics of each of the heroes, such as "stun", "invulnerability", "ranged" and "building damage". There are currently 55 planned attributes and 123 heroes.
+This database is then used to check each attribute's win rates and trends to identify possible positive and negative outliers, or identify important attributes missing in a hero composition and suggest hero picks.
+
+Currently implemented:
+-Datascraping of the heroes and abilities lists from www.dota2.com, www.dotabuff.com, https://liquipedia.net/dota2/ and https://dota2.fandom.com/wiki using a webdriver on Google Colab with pandas and selenium. Includes the handling of errors, detection and handling of new heroes or abilities, restoration and creation of backup files.
+
+Planned:
+-
